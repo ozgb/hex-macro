@@ -1,0 +1,17 @@
+[package]
+name = "hex-macro"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Adds a hex! macro for compile-time hex decoding"
+repository = "https://github.com/ozgb/hex-macro"
+keywords = ["hex", "macro"]
+categories = ["encoding"]
+
+[lib]
+proc-macro=true
+
+[dependencies]
+quote = "1.0"
+syn = "2.0"
+hex = "0.4"
