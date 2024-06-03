@@ -9,8 +9,12 @@
 ```rust
 use hex_macro::hex;
 
+// Simple example
 pub const DATA: [u8; 11] = hex!("0x48656c6c6f20776f726c64"); // Also works without the '0x' prefix
 assert_eq!(DATA, *b"Hello world");
+
+// Include a hex file
+pub const MORE_DATA: [u8; 2000] = hex!(include_bytes!("my_file.hex"));
 ```
 
 ## Features
