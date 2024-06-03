@@ -1,6 +1,7 @@
 [package]
 name = "hex-macro"
 version = "0.1.0"
+authors = ["ozgb"]
 edition = "2021"
 license = "MIT"
 description = "Adds a hex! macro for compile-time hex decoding"
